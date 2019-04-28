@@ -19,7 +19,7 @@ class User:
         try:
             self.cursor.execute("INSERT INTO users (mid) VALUES (?)", (mid,))
             self.db.commit()
-            print(f"Success, add {mid} keladam user")
+            print(f"Success, add {mid} to user")
         except Exception:
             print(f"{mid}, already in users")
 
